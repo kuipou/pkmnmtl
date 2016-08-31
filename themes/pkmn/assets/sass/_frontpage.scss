@@ -1,0 +1,90 @@
+body{background-color: #4e4300;}
+#front-top {
+  align-self:center;
+  
+  background-color: $debug-1;
+  width: span(8 of 12);
+  @include oswald(1.5em, 700);
+  a {color: $red-ball; @extend .hvr-hang;}
+  nav {
+    ul { text-align: center;
+
+ }
+  }
+
+}
+.text-logo {margin: 0.5em auto;}
+.front-container {
+ 
+  flex:1;
+  @include meri(1.4em, 500);
+  @include mappy-bp (large){
+    width: span(8 of 12);
+    padding:1rem;
+    margin-left: span(1 of 12);
+    @include card(1);
+    background-color: rgba(255, 255, 255, 0.5);
+    min-height: 50vh;
+    h1 {color: $text-nav; @include heading-size(4); font-weight:700; margin-bottom:0.3em;}
+    .info { min-height:25vh;
+    .split { padding:1em;
+      ul{ margin-left:1em;
+          list-style-type:none;
+            
+          li{ display:flex; align-items: center;
+            &:before {
+              width:2.2em;
+              height:2.2em;
+              margin-left: -1em;
+              display: block;
+              content: "";
+              background: url("images/plmtl_pkball.svg")
+            }
+            }}
+      img {width:100%;}
+      } }
+  }
+  
+  
+}
+.front-footer {
+  height:40px;
+  display:flex; 
+  background-color: $red-ball;
+  margin-top: 1em;
+  .tag { height:20px; 
+
+    flex:1;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    padding-left:100px;
+    @include oswald(1em, 400);
+    color: $text-invert;
+  }
+  .social {
+
+    // flex:1 0 200px;
+    width:span(3 of 12);
+     @include oswald(1em, 700);
+     padding-right: 0.5em;
+
+      a, span {color: $text-invert;}
+      span {padding-right:1em;}
+     ul{
+      display: flex;
+      justify-content:flex-end; 
+      align-items: center;
+      list-style: none;  
+      li {
+        width: 40px; height: 40px; 
+        // margin:0 2px;
+          font-size: 1.7em;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+      }
+  }
+
+}
+}

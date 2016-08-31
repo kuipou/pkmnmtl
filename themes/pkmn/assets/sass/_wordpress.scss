@@ -1,0 +1,12 @@
+/*
+Typography Wordpress specific
+
+*/
+
+
+blockquote {
+  width: span(8 of 12);
+  &:before {
+    content :" ";
+  }
+}

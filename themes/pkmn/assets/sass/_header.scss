@@ -1,0 +1,29 @@
+//Top menu 
+
+#top {
+  z-index: 999;
+  background-color: darken($red-ball, 5%);
+  height:200px;
+  .top {width:100%;}
+  
+  @include card(2);
+  .logo {
+    background: url(images/plmtl_logo.png) center no-repeat;
+    
+    height:135px;
+    z-index: 99;
+  }
+  li{
+    @include oswald(1.5em, 700);
+    // background-color: #333; 
+    width:span(2); }
+  @include mappy-bp (large) {
+    height:100px;  
+    ul { justify-content:center; text-align:center;
+    li {@include oswald(1.5em, 700);
+      // flex:1 0 50px;
+
+        }
+      }
+  }
+}

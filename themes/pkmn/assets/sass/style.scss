@@ -1,0 +1,53 @@
+/*!
+Theme Name: Montreal Pokemon League
+Theme URI: http://www.pkmnleague-mtl.com/
+Author: Christophe Rudyj
+Author URI: http://chrisrudyj.me
+Description: Site of the Montreal Pokemon League 
+Version: 0
+Text Domain: plmtl
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700,700i|Oswald:300,400,700&subset=latin-ext';
+@import  "lib/lib";
+@import  "lib/mixins";
+
+
+$breakpoints: (
+  'small'     : 320px,
+  'med'       : 640px,
+  'large'     : 920px,
+  'wide'      : 1200px,
+  'mega'      : 1400px,
+  // ...
+  );
+
+// Configuring Susy Defaults
+$susy: (
+  columns:12,
+  global-box-sizing: border-box,
+  utter-position: split,
+  debug: (image: show)
+  );
+
+// Colors
+
+$text-nav     : #1a5773;
+$text         : #0a0101;
+$text-invert  : invert($text);
+$red-ball     : #cd0b0b;
+$red-nav      : darken($red-ball, 10%);
+
+
+//IMPORTANT TO REMOVE
+$debug-1: #00796B;
+$debug-2: #d35400;
+
+//Tyypo
+@import "typography";
+@import "grid";
+@import "header";
+@import "footer";
+
+
+//@import "input";

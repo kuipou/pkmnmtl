@@ -1,0 +1,41 @@
+.front-footer {
+  height:40px;
+  display:flex; 
+  background-color: $red-ball;
+  margin-top: 1em;
+  .tag { height:20px; 
+
+    flex:1;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    padding-left:100px;
+    @include oswald(1em, 400);
+    color: $text-invert;
+  }
+  .social {
+
+    // flex:1 0 200px;
+    width:span(3 of 12);
+     @include oswald(1em, 700);
+     padding-right: 0.5em;
+
+      a, span {color: $text-invert;}
+      span {padding-right:1em;}
+     ul{
+      display: flex;
+      justify-content:flex-end; 
+      align-items: center;
+      list-style: none;  
+      li {
+        width: 40px; height: 40px; 
+        // margin:0 2px;
+          font-size: 1.7em;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+      }
+  }
+
+}
+}

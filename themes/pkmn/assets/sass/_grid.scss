@@ -1,0 +1,20 @@
+body {display:flex;  
+  flex-direction: column;
+  min-height:100vh;
+  font-size:16px;
+}
+.container {
+  @include mappy-bp (large) {
+    width:80%;
+    margin: 0 auto;
+  }
+}
+#top, #front-top, #top ul {display:flex; flex-wrap: wrap; justify-content:center;}
+.logo {flex:1 ;}
+#front-top ul {display:flex; justify-content: space-around;}
+.info {display:flex; flex-direction: row; justify-content: space-between; align-items:center;
+  .split {flex: 1 0 300px;
+    ul { display:flex; flex-direction:column; justify-content:center;}
+  }
+}
+#top li, #front-top li {flex-direction: column; flex: 1 0 200px;}
